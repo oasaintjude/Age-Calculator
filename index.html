@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="age-calculator">
+        <!-- BIRTHDATE -->
+        <div class="birthdate">
+            <!-- DAY -->
+            <div class="day input-and-label">
+                <label for="day">DAY</label>
+                <input type="text" name="day" id="day" placeholder="DD" minlength="2" maxlength="2" required>
+            </div>
+            <!-- MONTH -->
+            <div class="month input-and-label">
+                <label for="month">MONTH</label>
+                <input type="text" name="month" id="month" placeholder="MM" minlength="2" maxlength="2"required>
+            </div>
+            <!-- YEAR -->
+            <div class="year input-and-label">
+                <label for="year">YEAR</label>
+                <input type="text" name="year" id="year" placeholder="YYYY" minlength="4" maxlength="4" required>
+            </div>
+        </div>
+
+        <!-- HR & CALCULATE -->
+        <div class="hr-and-calculate">
+            <div class="hr">
+                <hr>
+            </div>
+            <button id="btn-calculate" onclick="check()"><img src="images/icon-arrow.svg" alt="icon-arrow-down"></button>
+        </div>
+
+        <!-- OUTPUT -->
+        <div class="output">
+            <p><span id="output-year">-- </span> year(s)</p>
+            <p><span id="output-month">-- </span> month(s)</p>
+            <p><span id="output-day">-- </span> day(s)</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
